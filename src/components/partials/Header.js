@@ -5,8 +5,7 @@ import {
   } from "react-router-dom";
 
 function Header() {
-   const [state,setState]=useState(0); /// this.state={}  ,this.setState()
-   console.log(state)
+
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">

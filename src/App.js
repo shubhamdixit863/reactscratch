@@ -12,7 +12,7 @@ import {
 } from "react-router-dom";
 
 
-function App() {
+function App(props) {
   return (
     <Fragment>
      
@@ -26,9 +26,10 @@ function App() {
           <div className="col-md-10 offset-md-1">
           <Switch>
           <Route exact path="/home">
-          <Home/>
+          <Home />
           </Route>
         </Switch>
+ 
           </div>
         
 
