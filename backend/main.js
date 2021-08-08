@@ -823,6 +823,15 @@ app.get("/getData/:id",(req,res)=>{
   res.json(_data);
 
 })
+
+
+app.get("/getDat2",(req,res)=>{
+  let params=req.query.name;
+
+  let _data=data.find(ele=>ele._id==params);
+  res.json(_data);
+
+})
 app.listen("9000",()=>{
 
     console.log("Server running")

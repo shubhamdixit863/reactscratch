@@ -10,6 +10,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Edit from './components/Edit';
+import Demo from './components/Demo';
 
 
 function App(props) {
@@ -27,6 +29,14 @@ function App(props) {
           <Switch>
           <Route exact path="/home">
           <Home />
+          </Route>
+
+          <Route exact path="/edit/:id">
+          <Edit />
+          </Route>
+
+          <Route exact path="/demo">
+          <Demo/>
           </Route>
         </Switch>
  
