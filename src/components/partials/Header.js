@@ -27,6 +27,15 @@ function Header() {
               <Link to="/demo" className="nav-link">Demo</Link>
 
             </li>
+
+            <li className="nav-item">
+              <Link to="/refs" className="nav-link">Refs</Link>
+
+            </li>
+            <li className="nav-item">
+              <Link to="/data" className="nav-link">Data</Link>
+
+            </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown

@@ -12,6 +12,8 @@ import {
 } from "react-router-dom";
 import Edit from './components/Edit';
 import Demo from './components/Demo';
+import Data from './components/Data';
+import Refs from './components/Refs';
 
 
 function App(props) {
@@ -37,6 +39,15 @@ function App(props) {
 
           <Route exact path="/demo">
           <Demo/>
+          </Route>
+
+          <Route exact path="/data">
+          <Data/>
+          </Route>
+
+
+          <Route exact path="/refs">
+          <Refs/>
           </Route>
         </Switch>
  

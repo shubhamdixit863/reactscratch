@@ -23,6 +23,14 @@ export default class Demo extends Component {
 componentDidMount()
 {
 
+    let name="john";
+    name=899;
+
+
+   
+
+
+
 
     /// We gonna be calling the api here which loads th einitial data 
 
