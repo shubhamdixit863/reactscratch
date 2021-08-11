@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home';// default export 
 import Header  from './components/partials/Header' // invitatio
+import {useHistory,useLocation} from "react-router-dom"
 
 import {
   BrowserRouter as Router,
@@ -14,9 +15,17 @@ import Edit from './components/Edit';
 import Demo from './components/Demo';
 import Data from './components/Data';
 import Refs from './components/Refs';
+import Effec from './components/Effec';
 
 
 function App(props) {
+
+  let history = useHistory();
+ // let location=useLocation();
+
+
+  //console.log(location);
+
   return (
     <Fragment>
      
@@ -29,9 +38,11 @@ function App(props) {
           <div className="row"> 
           <div className="col-md-10 offset-md-1">
           <Switch>
-          <Route exact path="/home">
-          <Home />
+          <Route  path="/home">
+          < Home/>
           </Route>
+
+     
 
           <Route exact path="/edit/:id">
           <Edit />

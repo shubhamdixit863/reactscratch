@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import axios  from 'axios';
-import {useHistory} from "react-router-dom"
+import {Redirect, useHistory,useLocation} from "react-router-dom"
 import ModalPrompt from './partials/ModalPrompt';
 
 
@@ -8,11 +8,25 @@ function Home(props) {
   const [state,setState]=useState(null);  /// th
   const [showModal,setShowModal]=useState(false);
   let history = useHistory();
+  let location=useLocation();
+
 
 
 
   // so it will play all the roles of component did update /mount and unmount
 useEffect(()=>{
+
+
+  if(location.pathname.includes("something"))
+  {
+  //  history.push("/home")
+ return  <Redirect to="/home"/>
+  }
+
+
+
+
+
   axios.get("http://localhost:9000/data").then(data=>{
     ///  
     setState({data:data["data"].data})
@@ -25,6 +39,10 @@ useEffect(()=>{
   })
 
 },[])
+
+
+
+
 
 const openEdit=(id)=>{
 

@@ -819,7 +819,7 @@ res.json({data:data});
 
 app.get("/getData/:id",(req,res)=>{
 
-  let _data=data.find(ele=>ele._id==req.params.id);
+  let _data=data.slice(0,req.params.id);
   res.json(_data);
 
 })
