@@ -16,6 +16,8 @@ import Demo from './components/Demo';
 import Data from './components/Data';
 import Refs from './components/Refs';
 import Effec from './components/Effec';
+import History from './components/History';
+import Usefect from './components/Usefect';
 
 
 function App(props) {
@@ -39,7 +41,7 @@ function App(props) {
           <div className="col-md-10 offset-md-1">
           <Switch>
           <Route  path="/home">
-          < Home/>
+          <Effec />
           </Route>
 
      
@@ -48,9 +50,12 @@ function App(props) {
           <Edit />
           </Route>
 
-          <Route exact path="/demo">
-          <Demo/>
+
+          <Route exact path="/history">
+          <Usefect />
           </Route>
+
+         
 
           <Route exact path="/data">
           <Data/>
